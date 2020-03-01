@@ -1,0 +1,18 @@
+<h1>POST request received</h1>
+<table border = "1">
+  {{#each getData}}
+    <tr>
+    	<td>{{this.name}}</td>
+    	<td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+</table>
+
+<table border="1">
+  {{#each postData}}
+    <tr>
+    	<td>{{this.name}}</td>
+    	<td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+</table>
