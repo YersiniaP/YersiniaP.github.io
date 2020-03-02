@@ -5,7 +5,7 @@ body{
 .Title{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
   font-style: italic;
-  font-size: 30pt;
+  font-size: 35pt;
 }
 
 .navbar{
@@ -31,5 +31,6 @@ body{
 
 .carousel-inner{
   border:2px solid peachpuff;
+  height:200px;
 }
 
