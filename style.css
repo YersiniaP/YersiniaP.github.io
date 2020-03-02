@@ -6,10 +6,13 @@ body{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
   font-style: italic;
   font-size: 45pt;
-  color:brown;
+  color:maroon;
 }
 
 .scrollBox{
+  font-family: 'Courier New', Courier, monospace;
+  color:maroon;
+  text-align:right;
   position: absolute;
   height:75px;
   width:250px;
@@ -44,5 +47,5 @@ body{
 }
 
 a{
-  color:brown
+  color:maroon;
 }
