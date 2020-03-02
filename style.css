@@ -21,5 +21,9 @@ body{
 
   padding-left:30px;
   padding-right:30px;
-  //border:1px solid peachpuff
 }
+
+.carousel-inner{
+  border:2px solid peachpuff;
+}
+
