@@ -4,9 +4,8 @@ body{
 
 .Title{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
-  font-style: italic;
+  font-style: brown italic;
   font-size: 45pt;
-  font-color: brown;
 }
 
 .scrollBox{
