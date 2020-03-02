@@ -43,7 +43,7 @@ body{
   padding-right:30px;
 }
 
-.carousel-inner > .carousel-item {
+.carousel-inner > .carousel-item > img {
   //width:100%;
   //height:200px;
 }
