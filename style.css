@@ -5,7 +5,16 @@ body{
 .Title{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
   font-style: italic;
-  font-size: 35pt;
+  font-size: 45pt;
+}
+
+.scrollBox{
+  position: absolute;
+  height:75px;
+  width:200px;
+  border:2px solid peachpuff; 
+  margin-left:75%;
+  margin-right:0%;
 }
 
 .navbar{
@@ -19,7 +28,6 @@ body{
 
 .nav-menu{
   width:25%;
-
   padding-left:30px;
   padding-right:30px;
 }
