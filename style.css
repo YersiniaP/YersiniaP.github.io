@@ -6,6 +6,7 @@ body{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
   font-style: italic;
   font-size: 45pt;
+  font-color: brown;
 }
 
 .scrollBox{
@@ -42,3 +43,6 @@ body{
   //height:200px;
 }
 
+a{
+  color:brown
+}
