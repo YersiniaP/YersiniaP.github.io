@@ -21,6 +21,10 @@ body{
   margin-right:0%;
 }
 
+.scrollBox a{
+  color: maroon;
+}
+
 .navbar{
   font-family: 'Alex Brush', 'Courier New', Courier, monospace;
   width:100%;
