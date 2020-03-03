@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kevin Wu's Activity 5 Assignment</title>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <form>
+        <h3>Weather Report</h3>
+        <fieldset>
+            <legend>Please enter your city and country or zip code</legend>
+            <div>
+                <label>
+                    City:
+                    <input type="text" name="city" id="city" />
+                </label>
+                <label>
+                    Country:
+                    <input type="text" name="country" id="country" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Zip code:
+                    <input type="number" name="zip" id="zip" />
+                </label>
+            </div>
+            <input type="submit" id="submitWeather" />
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>The weather is:</legend>
+        <label>
+            City:
+            <span id="cityResults"></span>
+        </label>
+        <br />
+        <label>
+            Temperature (K):
+            <span id="temperatureResults"></span>
+        </label>
+        <br />
+        <label>
+            Condition:
+            <span id="conditionResults"></span>
+        </label>
+    </fieldset>
+    <form>
+        <h3>Submit Form</h3>
+        <fieldset>
+            <legend>Please submit some form</legend>
+            <label>
+                Form:
+                <input type="text" name="form" id="form" />
+            </label>
+            <input type="submit" id="submitForm" />
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>You entered:</legend>
+        <span id="formResults"></span>
+    </fieldset>
+</body>
+</html>
