@@ -44,12 +44,12 @@ body{
 
 .carousel-inner > .carousel-item > img {
   //width:150px;
-  height:250px;
+  height:350px;
 }
 
 .carousel-inner{
   border:2px solid peachpuff;
-  width:200px;
+ // width:200px;
 }
 
 .Top-Pic{
