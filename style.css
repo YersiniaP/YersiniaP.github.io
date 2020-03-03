@@ -63,12 +63,12 @@ a{
 
 .btn {
   background-color: maroon;
-  border:1px solid maroon;
+  border:1px solid peachpuff;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
 }
 
 .btn a{
-    color: papayawhip;
+    color: peachpuff;
 }
