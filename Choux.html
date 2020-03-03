@@ -27,28 +27,31 @@
 
     <img src="Project Pictures/Choux-1.jpg" class="Top-Pic" caption="">
 
-    <button class="btn"><a href="Project Pictures/niveau3-paris-brest.jpg" download> Download the Recipe!</button></a>
+    <button class="btn"><a href="Project Pictures/niveau3-paris-brest.jpg" download> Download Recipe!</button></a>
 
-
-    <input type="submit" id="weather"/>
-    
-    <fieldset>
-        <legend>The weather is:</legend>
-        <label>
-            City:
-            <span id="cityResults"></span>
-        </label>
-        <br />
-        <label>
-            Temperature (K):
-            <span id="temperatureResults"></span>
-        </label>
-        <br />
-        <label>
-            Condition:
-            <span id="conditionResults"></span>
-        </label>
-    </fieldset>
+    <form>
+        <h3>Weather Report</h3>
+        <fieldset>
+            <legend>Please enter your city and country or zip code</legend>
+            <div>
+                <label>
+                    City:
+                    <input type="text" name="city" id="city" />
+                </label>
+                <label>
+                    Country:
+                    <input type="text" name="country" id="country" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Zip code:
+                    <input type="number" name="zip" id="zip" />
+                </label>
+            </div>
+            <input type="submit" id="submitWeather" />
+        </fieldset>
+    </form>
 
     <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
