@@ -36,7 +36,6 @@ body{
   }
 }
 
-
 .nav-menu{
   width:25%;
   padding-left:30px;
@@ -51,6 +50,10 @@ body{
 .carousel-inner{
   border:2px solid peachpuff;
   width:200px;
+}
+.Top Pic{
+  width:150px;
+  height:250px;
 }
 
 a{
