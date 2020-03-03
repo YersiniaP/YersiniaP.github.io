@@ -1,25 +1,28 @@
-var apiKey = '41a24f1f0a49193e9c9058894dd610f4';
 
-document.addEventListener('DOMContentLoaded', bindButtons);
+      document.addEventListener('DOMContentLoaded', bindButtons);
 
-function bindButtons(){
-  document.getElementById('weather').addEventListener('click', function(event){
-    var req = new XMLHttpRequest();
+      function bindButtons(){
+        document.getElementById('stringSubmit').addEventListener('click', function(event){
+          var req = new XMLHttpRequest();
+          var payload = {input:null};
+        
+          payload.input = document.getElementById('input').value;
+          console.log(payload.input);
 
-    req.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=paris,fr&appid=' + apiKey, false);
-    req.addEventListener('load',function(){
-      if(req.status >= 200 && req.status < 400){
-        var response = JSON.parse(req.responseText);
-                document.getElementById('cityResults').textContent = request.name;
-                document.getElementById('temperatureResults').textContent = request.main.temp;
-                document.getElementById('conditionResults').textContent = request.weather[0].description;
+
+          req.open('POST', 'http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php', false);
+          req.setRequestHeader('Content-Type', 'application/json');
+          req.addEventListener('load',function(){
+            if(req.status >= 200 && req.status < 400){
+              var response = JSON.parse(req.responseText);
+              document.getElementById('originalString').textContent = JSON.stringify(response);
+            }
+            else{
+              console.log("Error in network request: " + req.statusText);
+            }});
+
+          req.send(JSON.stringify(payload));
+
+          event.preventDefault();
+        });
       }
-      else{
-        console.log("Error in network request: " + req.statusText);
-      }});
-
-    req.send(null);
-
-    event.preventDefault();
-  });
-}
